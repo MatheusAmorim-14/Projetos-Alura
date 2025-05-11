@@ -1,0 +1,122 @@
+.player {
+    background-color: #181818;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.player__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.player__controls {
+    display: flex;
+    gap: 10px;
+}
+
+.player__controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player__controls button:disabled {
+    color: #888;
+    cursor: not-allowed;
+}
+
+#current-song {
+    flex-grow: 1;
+}
+
+.playlist {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.playlist li:hover {
+    background-color: #333;
+}
+
+.playlist li.active {
+    background-color: #1DB954;
+    color: white;
+}
+
+#add-music-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#add-music-button:hover {
+    background-color: #1ed760;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: #121212; /* Fundo escuro similar */
+    color: #fff;
+}
+
+#main-content-area {
+    padding: 20px;
+}
+
+.cards-section {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espaço entre a seção de cards e o player */
+    text-align: center; /* Só para centralizar o h2 dos cards no exemplo */
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    display: inline-block; /* Para os cards ficarem lado a lado no exemplo */
+}
+
+/* A MÁGICA DA CENTRALIZAÇÃO DO PLAYER */
+#music-player-container {
+    width: 70%; /* Largura do player */
+    max-width: 600px; /* Largura máxima */
+
+    margin-left: auto;  /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    margin-top: 30px;   /* Espaço ACIMA do player (abaixo dos cards) */
+
+    background-color: #282828;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center; /* Para centralizar o TEXTO e BOTÕES DENTRO do player */
+}
+
+#music-player-container p {
+    margin-bottom: 15px;
+}
